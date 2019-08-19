@@ -12,7 +12,10 @@ h1{
     font-family: sans-serif;
   }
 
+ .navbar{
+position: fixed;
 
+}
 
 
 ul {
@@ -35,7 +38,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+li a:hover {
   background-color: #111;
 }
 
@@ -60,25 +63,54 @@ li a:hover:not(.active) {
   
 
 .hero-section {
-  background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg") 50% no-repeat;
+  background: url("https://images.pexels.com/photos/1375807/pexels-photo-1375807.jpeg?cs=srgb&dl=bowl-candy-chocolate-1375807.jpg&fm=jpg") 50% no-repeat;
   background-size: cover;
   height: 60vh;
   text-align: center;
-  display: -webkit-flex;
+  
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
+  
+        
           align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+        
+        
+        justify-content: center;
 }
 
 .hero-section .hero-section-text {
   color: #fefefe;
   text-shadow: 1px 1px 2px #0a0a0a;
 }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: rgb(243, 18, 175);
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(238, 227, 236, 0.959);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.item2{
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+
+
+
 footer a {
   padding: 20px;
 }
@@ -90,6 +122,7 @@ footer a {
   padding: 12px 50px;
   font-size: 16px;
   cursor: pointer;
+  margin-right: 5px;
 }
 
 /* Darker background on mouse-over */
